@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>signature</title>
+  <style type="text/css">
+    body {
+      background: #a8a8a8;
+    }
+    h1 {
+      text-align: center;
+      padding-bottom: 20px;
+    }
+    #signature {
+      display: block;
+      margin: 0 auto;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <h1>签名</h1>
+  <canvas id="signature" width="300" height="260">
+    您的浏览器不支持canvas！
+  </canvas>
+</body>
+</html>
+<script type="text/javascript" src="signature.js"></script>
+<script>
+  var signature = new Signature();
+  signature.init()
+</script>
